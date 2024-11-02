@@ -1,14 +1,18 @@
 'use client';
 
 import Image from 'next/image';
+import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, A11y } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { Button } from '@/components/ui/button';
 
 export default function Home() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const slides = [
     {
       id: 1,
@@ -94,16 +98,44 @@ export default function Home() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 header shadow-lg p-4 z-10">
+      <header className="fixed top-0 left-0 right-0 bg-white shadow-lg p-4 z-10">
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-lg sm:text-xl font-bold">METRONAVI</div>
-          {/* モバイルではハンバーガーメニューにするか、メニューを非表示 */}
+
+          {/* モバイル用のメニューボタン */}
+          <Button
+            className="sm:hidden text-gray-700 focus:outline-none"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {/* ハンバーガーアイコン */}
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d={isMenuOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'}
+              />
+            </svg>
+          </Button>
+
+          {/* ナビゲーションメニュー */}
           <nav className="hidden sm:flex space-x-4">
-            <a href="#" className="hover:text-blue-300">活動紹介</a>
+            <a href="/introduce" className="hover:text-blue-300">活動紹介</a>
             <a href="https://toritsu-connect.com/category/free-paper/" className="hover:text-blue-300">RE</a>
             <a href="/contacts" className="hover:text-blue-300">Contact</a>
           </nav>
         </div>
+
+        {/* モバイルメニュー */}
+        {isMenuOpen && (
+          <div className="sm:hidden">
+            <nav className="flex flex-col items-center space-y-2 mt-4">
+              <a href="/introduce" className="hover:text-blue-300">活動紹介</a>
+              <a href="https://toritsu-connect.com/category/free-paper/" className="hover:text-blue-300">RE</a>
+              <a href="/contacts" className="hover:text-blue-300">Contact</a>
+            </nav>
+          </div>
+        )}
       </header>
 
       <div className="background-container" id="backgroundContainer"></div>
