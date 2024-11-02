@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import plugin from 'tailwindcss/plugin';
 
 const config: Config = {
   darkMode: ["class"],
@@ -67,20 +68,23 @@ const config: Config = {
       },
       animation: {
         slideshow: 'slideshow 15s infinite',
-		  },
-	  textShadow: {
+      },
+      textShadow: {
         'outline': '0px 2px 48px #000',
       },
     },
   },
-  plugins: [function ({ addUtilities }) {
+  plugins: [
+    plugin(function ({ addUtilities }) {
       const newUtilities = {
         '.text-outline': {
           'text-shadow': '0 0 2px #000',
         },
       };
       addUtilities(newUtilities);
-    },require("tailwindcss-animate")],
+    }),
+    require("tailwindcss-animate"),
+  ],
 };
 
 export default config;
