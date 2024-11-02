@@ -14,7 +14,8 @@ export function BackgroundSlideshow() {
         <div
           key={index}
           className={cn(
-            "absolute inset-0 bg-cover bg-center animate-slideshow",
+              "absolute inset-0 bg-cover bg-center animate-slideshow",
+              "filter blur-sm",
             index === 0 ? "opacity-1" : "opacity-0"
           )}
           style={{

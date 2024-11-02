@@ -57,7 +57,8 @@ export default function ActivityIntroduction() {
                 </div>
               </AspectRatio>
             </div>
-            <div className="space-y-4">
+                      <div className="space-y-4">
+                          <p></p>
               <p className="text-lg">
                 <strong>&quot;RE&quot;</strong>は、地域の魅力を再発見し、学生と地元をつなぐフリーペーパーです。
               </p>
