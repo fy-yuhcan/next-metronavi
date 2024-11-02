@@ -4,6 +4,10 @@ import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, A11y } from 'swiper/modules';
 
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 export default function Home() {
   const slides = [
     {
@@ -15,11 +19,6 @@ export default function Home() {
       id: 2,
       image: '/images/LINE_ALBUM_めなびー_241101_2.jpg',
       alt: 'スライド2の説明',
-    },
-    {
-      id: 3,
-      image: '/images/slide3.jpg',
-      alt: 'スライド3の説明',
     },
     // 必要に応じてスライドを追加
   ];
