@@ -135,7 +135,7 @@ export default function Home() {
         >
           {slides.map((slide) => (
             <SwiperSlide key={slide.id}>
-              <div className="relative w-3/4 h-120 sm:w-1/2 sm:h-[960px] mx-auto">
+              <div className="relative w-3/4 h-96 sm:w-1/2 sm:h-[960px] mx-auto">
                 <Image
                   src={slide.image}
                   alt={slide.alt}
