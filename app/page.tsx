@@ -99,9 +99,9 @@ export default function Home() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 bg-white shadow-lg p-4 z-10">
+      <header className="fixed top-0 left-0 right-0 bg-white shadow-lg p-1">
         <div className="container mx-auto flex justify-between items-center">
-          <div className="text-lg sm:text-xl font-bold text-white text-outline">METRONAVI</div>
+          <div className="text-lg sm:text-xl font-bold  text-blue-500 text-outline">METRONAVI</div>
 
           {/* モバイル用のメニューボタン */}
           <Button
