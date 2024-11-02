@@ -67,10 +67,20 @@ const config: Config = {
       },
       animation: {
         slideshow: 'slideshow 15s infinite',
+		  },
+	  textShadow: {
+        'outline': '0px 2px 48px #000',
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [function ({ addUtilities }) {
+      const newUtilities = {
+        '.text-outline': {
+          'text-shadow': '0 0 2px #000',
+        },
+      };
+      addUtilities(newUtilities);
+    },require("tailwindcss-animate")],
 };
 
 export default config;

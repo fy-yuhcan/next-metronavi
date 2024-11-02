@@ -101,7 +101,7 @@ export default function Home() {
     <>
       <header className="fixed top-0 left-0 right-0 bg-white shadow-lg p-4 z-10">
         <div className="container mx-auto flex justify-between items-center">
-          <div className="text-lg sm:text-xl font-bold text-muted-foreground text-gray-100 text-outline">METRONAVI</div>
+          <div className="text-lg sm:text-xl font-bold text-white text-outline">METRONAVI</div>
 
           {/* モバイル用のメニューボタン */}
           <Button
@@ -150,11 +150,11 @@ export default function Home() {
           </div>
 
           <section className="mb-6">
-            <h2 className="text-2xl sm:text-4xl font-semibold mb-">&quot;RE&quot; フリーペーパーについて</h2>
-            <p className="mb-2 text-sm sm:text-base text-muted-foreground text-gray-100 text-outline">
+            <h2 className="text-2xl sm:text-4xl font-semibold text-gray-100 text-outline">&quot;RE&quot; フリーペーパーについて</h2>
+            <p className="mb-2 text-sm sm:text-base  text-white text-outline">
               フリーペーパーREは毎年都立大生に役立つ情報を発信しています！
             </p>
-            <p>
+            <p className=' text-white text-outline text-md'>
               ↓↓今年のREはこちら↓↓
             </p>
           </section>
@@ -187,7 +187,7 @@ export default function Home() {
       </section>
 
          <section>
-  <p className="text-sm sm:text-base text-muted-foreground text-gray-100 text-outline">サークルの情報はSNSで投稿しています！</p>
+  <p className="text-sm sm:text-base text-white text-outline fond-bold">サークルの情報はSNSで投稿しています！</p>
   <ul className="flex flex-row items-center justify-center space-x-4 mt-4">
     <li className="flex flex-col items-center">
       <a
