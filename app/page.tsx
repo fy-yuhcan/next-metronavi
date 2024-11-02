@@ -25,12 +25,12 @@ export default function Home() {
           <section className="mb-6">
             <h2 className="text-4xl font-semibold mb-5">活動紹介</h2>
             <p className="mb-8">
-              私たちは、東京都立大学の生徒に役立つ情報を発信しています。また、"RE"というフリーペーパーを発行することで、南大沢の地元企業と都立大生とのつながりを深めることを目指しています。
+              私たちは、東京都立大学の生徒に役立つ情報を発信しています。また、&quot;RE&quot;というフリーペーパーを発行することで、南大沢の地元企業と都立大生とのつながりを深めることを目指しています。
             </p>
           </section>
 
           <section className="mb-6">
-            <h2 className="text-4xl font-semibold mb-4">"RE" フリーペーパーについて</h2>
+            <h2 className="text-4xl font-semibold mb-4">&quot;RE&quot; フリーペーパーについて</h2>
             <p className="mb-2">
               フリーペーパーREは毎年都立大生に役立つ情報を発信しています！
             </p>
@@ -44,7 +44,7 @@ export default function Home() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-5">REをみてみよう！！</h2>
             <p>
-              RE2024年版の画面を"METROなSAKABar"にもっていくと南大沢で使えるクーポンを獲得できます！
+              RE2024年版の画面を&quot;METROなSAKABar&quot;にもっていくと南大沢で使えるクーポンを獲得できます！
             </p>
           </section>
 
@@ -93,3 +93,4 @@ export default function Home() {
     </>
   );
 }
+
