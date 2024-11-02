@@ -9,6 +9,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Button } from '@/components/ui/button';
+import { BackgroundSlideshow } from '@/components/BackgroundSlideShow';
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -138,6 +139,7 @@ export default function Home() {
         )}
       </header>
 
+      <BackgroundSlideshow />
       <div className="background-container" id="backgroundContainer"></div>
 
       <main className="content h-screen flex items-center justify-center">
