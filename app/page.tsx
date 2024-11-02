@@ -152,45 +152,46 @@ export default function Home() {
         </Swiper>
       </section>
 
-          <section>
-            <p className="text-sm sm:text-base">サークルの情報はSNSで投稿しています！</p>
-            <ul className="flex flex-col sm:flex-row items-center sm:space-x-8 space-y-4 sm:space-y-0">
-              <li className="flex items-center space-x-2 sm:space-x-4">
-                <i className="fab fa-instagram text-pink-500"></i>
-                <a
-                  href="https://www.instagram.com/metronavi_tmu/profilecard/?igsh=MTNoamh1Zmxjbnl1dw=="
-                  target="_blank"
-                  className="text-blue-400 hover:underline text-2xl sm:text-3xl"
-                >
-                  Instagram
-                </a>
-                <Image
-                  src="/images/S__118439954.jpg"
-                  alt="Instagram Image"
-                  className="w-24 h-24 sm:w-32 sm:h-32 ml-2 sm:ml-4"
-                  width={128}
-                  height={128}
-                />
-              </li>
-              <li className="flex items-center space-x-2 sm:space-x-4">
-                <i className="fab fa-x-twitter text-blue-500"></i>
-                <a
-                  href="https://x.com/metro_navi_tmu"
-                  target="_blank"
-                  className="text-blue-400 hover:underline text-2xl sm:text-3xl"
-                >
-                  X
-                </a>
-                <Image
-                  src="/images/S__118448211.jpg"
-                  alt="X Image"
-                  className="w-24 h-24 sm:w-32 sm:h-32 ml-2 sm:ml-4"
-                  width={128}
-                  height={128}
-                />
-              </li>
-            </ul>
-          </section>
+         <section>
+  <p className="text-sm sm:text-base">サークルの情報はSNSで投稿しています！</p>
+  <ul className="flex flex-row items-center justify-center space-x-4 mt-4">
+    <li className="flex flex-col items-center">
+      <a
+        href="https://www.instagram.com/metronavi_tmu/profilecard/?igsh=MTNoamh1Zmxjbnl1dw=="
+        target="_blank"
+        className="text-blue-400 hover:underline text-2xl sm:text-3xl mb-2"
+        rel="noopener noreferrer"
+      >
+        Instagram
+      </a>
+      <Image
+        src="/images/S__118439954.jpg"
+        alt="Instagram Image"
+        className="w-24 h-24 sm:w-32 sm:h-32"
+        width={128}
+        height={128}
+      />
+    </li>
+    <li className="flex flex-col items-center">
+      <a
+        href="https://x.com/metro_navi_tmu"
+        target="_blank"
+        className="text-blue-400 hover:underline text-2xl sm:text-3xl mb-2"
+        rel="noopener noreferrer"
+      >
+        X
+      </a>
+      <Image
+        src="/images/S__118448211.jpg"
+        alt="X Image"
+        className="w-24 h-24 sm:w-32 sm:h-32"
+        width={128}
+        height={128}
+      />
+    </li>
+  </ul>
+</section>
+
         </div>
       </main>
     </>
