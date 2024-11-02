@@ -118,7 +118,10 @@ export default function Home() {
           <section className="mb-6">
             <h2 className="text-2xl sm:text-4xl font-semibold mb-">&quot;RE&quot; フリーペーパーについて</h2>
             <p className="mb-2 text-sm sm:text-base">
-              フリーペーパーREは毎年都立大生に役立つ情報を発信しています！ ↓↓今年のRE↓↓
+              フリーペーパーREは毎年都立大生に役立つ情報を発信しています！
+            </p>
+            <p>
+              ↓↓今年のREはこちら↓↓
             </p>
           </section>
 
