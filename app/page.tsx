@@ -124,30 +124,30 @@ export default function Home() {
 
           {/* スライドショーの追加 */}
           <section className="mb-8">
-            <Swiper
-              modules={[Navigation, Pagination, A11y]}
-              spaceBetween={50}
-              slidesPerView={1}
-              navigation
-              pagination={{ clickable: true }}
-              loop={true}
-              className="mySwiper"
-            >
-              {slides.map((slide) => (
-                <SwiperSlide key={slide.id}>
-                  <div className="relative w-full h-64 sm:h-96">
-                    <Image
-                      src={slide.image}
-                      alt={slide.alt}
-                      fill
-                      style={{ objectFit: 'cover' }}
-                      className="rounded-lg"
-                    />
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </section>
+        <Swiper
+          modules={[Navigation, Pagination, A11y]}
+          spaceBetween={50}
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}
+          loop={true}
+          className="mySwiper"
+        >
+          {slides.map((slide) => (
+            <SwiperSlide key={slide.id}>
+              <div className="relative w-3/4 h-120 sm:w-1/2 sm:h-[960px] mx-auto">
+                <Image
+                  src={slide.image}
+                  alt={slide.alt}
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  className="rounded-lg"
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </section>
 
           <section>
             <p className="text-sm sm:text-base">サークルの情報はSNSで投稿しています！</p>
