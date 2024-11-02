@@ -1,6 +1,29 @@
+'use client';
+
 import Image from 'next/image';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, A11y } from 'swiper/modules';
 
 export default function Home() {
+  const slides = [
+    {
+      id: 1,
+      image: '/images/LINE_ALBUM_めなびー_241101_1.jpg',
+      alt: 'スライド1の説明',
+    },
+    {
+      id: 2,
+      image: '/images/LINE_ALBUM_めなびー_241101_2.jpg',
+      alt: 'スライド2の説明',
+    },
+    {
+      id: 3,
+      image: '/images/slide3.jpg',
+      alt: 'スライド3の説明',
+    },
+    // 必要に応じてスライドを追加
+  ];
+
   return (
     <>
       <header className="fixed top-0 left-0 right-0 header shadow-lg p-4 z-10">
@@ -29,6 +52,33 @@ export default function Home() {
             <p className="mb-8 text-sm sm:text-base">
               私たちは、東京都立大学の生徒に役立つ情報を発信しています。また、&quot;RE&quot;というフリーペーパーを発行することで、南大沢の地元企業と都立大生とのつながりを深めることを目指しています。
             </p>
+          </section>
+
+          {/* スライドショーの追加 */}
+          <section className="mb-8">
+            <Swiper
+              modules={[Navigation, Pagination, A11y]}
+              spaceBetween={50}
+              slidesPerView={1}
+              navigation
+              pagination={{ clickable: true }}
+              loop={true}
+              className="mySwiper"
+            >
+              {slides.map((slide) => (
+                <SwiperSlide key={slide.id}>
+                  <div className="relative w-full h-64 sm:h-96">
+                    <Image
+                      src={slide.image}
+                      alt={slide.alt}
+                      layout="fill"
+                      objectFit="cover"
+                      className="rounded-lg"
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </section>
 
           <section className="mb-6">
@@ -95,5 +145,6 @@ export default function Home() {
     </>
   );
 }
+
 
 
