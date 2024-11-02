@@ -12,15 +12,84 @@ export default function Home() {
   const slides = [
     {
       id: 1,
-      image: '/images/LINE_ALBUM_めなびー_241101_1.jpg',
+      image: '/images/image.png',
       alt: 'スライド1の説明',
     },
     {
       id: 2,
-      image: '/images/LINE_ALBUM_めなびー_241101_2.jpg',
+      image: '/images/image (1).png',
       alt: 'スライド2の説明',
     },
-    // 必要に応じてスライドを追加
+    {
+      id: 3,
+      image: '/images/image (2).png',
+      alt: 'スライド2の説明',
+    },
+    {
+      id: 4,
+      image: '/images/image (3).png',
+      alt: 'スライド2の説明',
+    },
+    {
+      id: 5,
+      image: '/images/image (4).png',
+      alt: 'スライド2の説明',
+    },
+    {
+      id: 6,
+      image: '/images/image (5).png',
+      alt: 'スライド2の説明',
+    },
+    {
+      id: 7,
+      image: '/images/image (6).png',
+      alt: 'スライド2の説明',
+    },
+    {
+      id: 8,
+      image: '/images/image (7).png',
+      alt: 'スライド2の説明',
+    },
+    {
+      id: 9,
+      image: '/images/image (8).png',
+      alt: 'スライド2の説明',
+    },
+    {
+      id: 10,
+      image: '/images/image (9).png',
+      alt: 'スライド2の説明',
+    },
+    {
+      id: 11,
+      image: '/images/image (10).png',
+      alt: 'スライド2の説明',
+    },
+    {
+      id: 12,
+      image: '/images/image (11).png',
+      alt: 'スライド2の説明',
+    },
+    {
+      id: 13,
+      image: '/images/image (12).png',
+      alt: 'スライド2の説明',
+    },
+    {
+      id: 14,
+      image: '/images/image (13).png',
+      alt: 'スライド2の説明',
+    },
+    {
+      id: 15,
+      image: '/images/image (14).png',
+      alt: 'スライド2の説明',
+    },
+    {
+      id: 16,
+      image: '/images/image (15).png',
+      alt: 'スライド2の説明',
+    },
   ];
 
   return (
@@ -43,13 +112,13 @@ export default function Home() {
         <div className="container mx-auto text-center px-4 sm:px-0">
           {/* スマホ画面での文字サイズ調整 */}
           <div className="text-3xl sm:text-5xl font-bold text-blue-500 mt-[-20px] sm:mt-[-40px] mb-10 sm:mb-20">
-            ポータルサイトMETRONAVI
+            METRONAVI
           </div>
 
           <section className="mb-6">
-            <h2 className="text-2xl sm:text-4xl font-semibold mb-5">活動紹介</h2>
-            <p className="mb-8 text-sm sm:text-base">
-              私たちは、東京都立大学の生徒に役立つ情報を発信しています。また、&quot;RE&quot;というフリーペーパーを発行することで、南大沢の地元企業と都立大生とのつながりを深めることを目指しています。
+            <h2 className="text-2xl sm:text-4xl font-semibold mb-">&quot;RE&quot; フリーペーパーについて</h2>
+            <p className="mb-2 text-sm sm:text-base">
+              フリーペーパーREは毎年都立大生に役立つ情報を発信しています！ ↓↓今年のRE↓↓
             </p>
           </section>
 
@@ -70,8 +139,8 @@ export default function Home() {
                     <Image
                       src={slide.image}
                       alt={slide.alt}
-                      layout="fill"
-                      objectFit="cover"
+                      fill
+                      style={{ objectFit: 'cover' }}
                       className="rounded-lg"
                     />
                   </div>
@@ -80,27 +149,7 @@ export default function Home() {
             </Swiper>
           </section>
 
-          <section className="mb-6">
-            <h2 className="text-2xl sm:text-4xl font-semibold mb-4">&quot;RE&quot; フリーペーパーについて</h2>
-            <p className="mb-2 text-sm sm:text-base">
-              フリーペーパーREは毎年都立大生に役立つ情報を発信しています！
-            </p>
-            <a href="https://www.canva.com/design/DAGVH9KGaq8/UwPuFL9Za7zd5j_h5U-QbA/view?utm_content=DAGVH9KGaq8&utm_campaign=designshare&utm_medium=link&utm_source=editor">
-              <button className="mt-4 bg-blue-600 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 text-sm sm:text-base">
-                フリーペーパー「RE」を見る
-              </button>
-            </a>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-xl sm:text-2xl font-semibold mb-5">REをみてみよう！！</h2>
-            <p className="text-sm sm:text-base">
-              RE2024年版の画面を&quot;METROなSAKABar&quot;にもっていくと南大沢で使えるクーポンを獲得できます！
-            </p>
-          </section>
-
           <section>
-            <h2 className="text-2xl sm:text-4xl font-semibold mb-2">Contact</h2>
             <p className="text-sm sm:text-base">サークルの情報はSNSで投稿しています！</p>
             <ul className="flex flex-col sm:flex-row items-center sm:space-x-8 space-y-4 sm:space-y-0">
               <li className="flex items-center space-x-2 sm:space-x-4">
@@ -144,6 +193,7 @@ export default function Home() {
     </>
   );
 }
+
 
 
 
