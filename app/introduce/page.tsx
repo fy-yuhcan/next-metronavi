@@ -1,11 +1,13 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Image from "next/image";
+import { Analytics } from "@vercel/analytics/react"
 
 export default function ActivityIntroduction() {
-  return (
+    return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold text-center mb-8">活動紹介</h1>
+            <h1 className="text-3xl font-bold text-center mb-8">活動紹介</h1>
+            <Analytics />
 
       <Card className="mb-8">
         <CardHeader>

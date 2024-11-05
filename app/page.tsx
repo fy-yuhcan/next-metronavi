@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, A11y } from 'swiper/modules';
+import { Analytics } from "@vercel/analytics/react"
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -99,6 +100,7 @@ export default function Home() {
 
   return (
     <>
+      <Analytics />
       <header className="fixed top-0 left-0 right-0 bg-white shadow-lg p-1">
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-lg sm:text-xl font-bold  text-blue-500 text-outline">METRONAVI</div>
